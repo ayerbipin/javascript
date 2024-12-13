@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .blue_box{
+            width: 200px;
+            height: 300px;
+            background: blue;
+            margin-top: 10px;
+             
+        }
+        .red_box{
+            width: 200px;
+            height: 300px;
+            background: red;
+            margin-top: 10px;
+                     }
+    </style>
+    </head>
+    <body>
+        <div id="result"></div>
+    <script>
+        for(let x=1;x<=10; x++)
+        {
+            if(x<5){
+                let blue_box="<div class='blue_box'>BLUE</div>";
+                document.getElementById('result').innerHTML +=blue_box;
+            }else{
+                let red_box="<div class='red_box'>RED</div>";
+                document.getElementById('result').innerHTML +=red_box;
+            }
+            
+            
+            
+        }
+       
+    </script>
+</body>
+</html>
